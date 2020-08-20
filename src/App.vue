@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html{
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.5) 100%) no-repeat,
+    url(./assets/pattern.png);
+  background-size: auto;
+  height: 100%;
 }
 
-#nav {
-  padding: 30px;
+@font-face{
+  font-family: exo2;
+  src: url('./assets/fonts/Exo2.0-Thin.otf') format('opentype');
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+@font-face{
+  font-family: trebuc;
+  src: url('./assets/fonts/trebuc.ttf') format('opentype');
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+@font-face{
+  font-family: trebucbd;
+  src: url('./assets/fonts/trebucbd.ttf') format('opentype');
+}
+
+#app {
+  font-family: 'exo2';
 }
 </style>
